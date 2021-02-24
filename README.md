@@ -1,2 +1,4 @@
-# -uebersicht-widget-icinga
-Widget for Übersicht http://tracesof.net/uebersicht/ to monitor your icinga host on your desktop
+# uebersicht widget for github runners
+Widget for Übersicht http://tracesof.net/uebersicht/ to display your current github action runners
+
+
