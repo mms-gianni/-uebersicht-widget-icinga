@@ -1,0 +1,28 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+    - 'README.md'
+    - 'github-runner.coffee'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Zip files
+        run: zip github-runner.widget.zip README.md LICENSE github-runner.coffee
+
+      - name: Add and push zip file
+        run: |
+          git config --global user.email "github@gmail.com"
+          git config --global user.name "Build Action"
+          git add github-runner.widget.zip
+          git commit -m "added rebuilded zip file"
+          git push

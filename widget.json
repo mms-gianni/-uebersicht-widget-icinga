@@ -1,0 +1,6 @@
+{
+    "name": "Github Action Runner status",
+    "description": "Shows a list and status of your Github Action Runners",
+    "author": "G. Carafa",
+    "email": "gicara+uebersicht@gmail.com"
+}
